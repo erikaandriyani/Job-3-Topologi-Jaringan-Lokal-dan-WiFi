@@ -43,7 +43,7 @@ Hostname Berubah di Perangkat
 
 ![Mengganti hostname ESP32 (tmpilan di prngkat wifi)](https://user-images.githubusercontent.com/118364435/206268409-1171089b-2276-4613-aba2-134b094c9957.jpg)
 
-Analisa : Pada percobaan ini diminta untuk mengganti nama hostname ESP32. Yang sebelumnya bernama esp32-arduino, kali ini diubah menjadi ESP32. Ketika script dirun, maka hostname akan berubah menjadi ESP32, bisa dicek juga pada android (perangkat). Namun jika pada saat run, hostname belum berubah, lakukan uploaing ulang atau ganti nama hostnamenya.
+Analisa : Pada percobaan ini diminta untuk mengganti nama hostname ESP32. Yang sebelumnya bernama esp32-arduino, kali ini diubah menjadi ESP32. Ketika script dirun, maka hostname akan berubah menjadi ESP32, bisa dicek juga pada android (perangkat). Namun jika pada saat run, hostname belum berubah, lakukan uploading ulang atau ganti nama hostnamenya.
 
 **5) Mengirim Data Sensor ke Database**
 
@@ -55,4 +55,4 @@ Keluaran (Untuk Mengetahui IP Address di Serial Monitor)
 Keluaran (Akses IP Address di Web Browser)
 ![Mengirim data sensor DHT11 ke database (web browser)](https://user-images.githubusercontent.com/118364435/206269197-c0bf2a38-06f9-42be-bb2d-ec2a634e4d35.jpeg)
 
-Analisa :
+Analisa : Percobaan ini digunakan sensor suhu DHT11 untuk mengirimkan data sensor ke database. Disini digunakan Asynch Web Server dan Asycnh TCP. Ketika script dijalankan dan tersambung WiFi, maka pada serial monitor akan menampilkan pesan Connecting to WiFi, alamat IP, dan nilai suhu dari sensor (gambar keluaran 1). Alamat IP yang diketahui tadi, masukkan ke dalam web browser, maka browser akan menampilkan data dari sensor suhu tersebut (gambar keluaran 2).
