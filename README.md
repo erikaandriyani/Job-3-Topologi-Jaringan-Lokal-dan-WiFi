@@ -16,7 +16,7 @@ Wireless Fidelity atau yang lebih awam kita sebut wifi adalah suatu teknologi ya
 **1) ESP32 WiFi Modes dan WiFi Scan**
 ![ESP32 Wifi dan Wifi Scan](https://user-images.githubusercontent.com/118364435/206267667-efbd1894-a570-4f84-979f-c742f35a85d7.jpeg)
 
-Analisa : Percobaan ini adalah percobaan untuk men-scan WiFi yang ada di sekitar. Sperti pada keluaran, setelah script di run, maka serial monitor akan menampilkan data semua WiFi yang bisa dijangkau oleh ESP32.
+Analisa : Percobaan ini adalah percobaan untuk men-scan WiFi yang ada di sekitar. Seperti pada keluaran, setelah script di run, maka serial monitor akan menampilkan data semua WiFi yang bisa dijangkau oleh ESP32.
 
 **2) Menghubungkan ESP32 Dengan Jaringan WiFi**
 ![Menghubungkan ESP32 dengan jaringan Wifi](https://user-images.githubusercontent.com/118364435/206267866-c2d1cf68-6645-496e-bfac-645e2acbb1b7.jpeg)
@@ -56,3 +56,8 @@ Keluaran (Akses IP Address di Web Browser)
 ![Mengirim data sensor DHT11 ke database (web browser)](https://user-images.githubusercontent.com/118364435/206269197-c0bf2a38-06f9-42be-bb2d-ec2a634e4d35.jpeg)
 
 Analisa : Percobaan ini digunakan sensor suhu DHT11 untuk mengirimkan data sensor ke database. Disini digunakan Asynch Web Server dan Asycnh TCP. Ketika script dijalankan dan tersambung WiFi, maka pada serial monitor akan menampilkan pesan Connecting to WiFi, alamat IP, dan nilai suhu dari sensor (gambar keluaran 1). Alamat IP yang diketahui tadi, masukkan ke dalam web browser, maka browser akan menampilkan data dari sensor suhu tersebut (gambar keluaran 2).
+
+
+**KESIMPULAN**
+1) Pengunaan mikrokontroler ESP32 bisa dikoneksikan ke jaringan lokal wireless untuk mendapatkan internet. Dengan menggunakan ESP32, dapat dilakukan scanning WiFi (mengetahui nama dan alamat WiFi yang ter-scan), menghubungkan ESP32 dengan WiFi, reconnecting ESP32 ke WiFi, dan mengganti hostname ESP32 yang tersambung ke WiFi tersebut. 
+2) Mengunakan WiFi dan ESP32 ini bisa juga digunakan untuk mengirim data sensor suhu ke database menggunakan Asynch Web Server dan Asycnh TCP. Dengan script yang sesuai, maka dapat dilakukan pembacaan suhu oleh DHT11 yang kemudian data suhu tersebut bisa dilihat di browser melalui alamat IP WiFi yang dihubungkan.
